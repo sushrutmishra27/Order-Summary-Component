@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+/* Primary Colors */
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral Colors */
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-color: var(--pale-blue);
+
+  display: grid;
+  place-items: center;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+
+  height: 100vh;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  color: var(--desaturated-blue);
+  overflow: hidden;
+  width: 450px;
+}
+
+.card-title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+  
+  .card-hero-img {
+    width: 100%;
+}
+
+.card-body {
+    color: var(--desaturated-blue);
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+}
+
+.card-body > * {
+    margin: 12px 0;
+}
+
+.card-description {
+    line-height: 24px;
+}
+
+.card .plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px;
+}
+  
+.card .plan .plan-description {
+    line-height: 28px;
+    margin-right: 96px;
+}
+  
+.card .plan .plan-type {
+    color: var(--dark-blue);
+}
+
+.card .link-change {
+    color: var(--bright-blue);
+    font-size: 0.8123rem;
+    font-weight: 700;
+}
+  
+.card .link-change:hover {
+    text-decoration: none;
+}
+  
+.card .btn-submit {
+    background-color: var(--bright-blue);
+    box-shadow: 0 20px 30px -8px rgb(197 198 245);
+    color: #fff;
+    padding: 1rem 0;
+}
+  
+.card .btn-submit:hover,
+.card .link-change:hover {
+    opacity: 0.8;
+}
+  
+.card .btn-cancel {
+    background-color: #fff;
+    color: var(--desaturated-blue);
+    margin-top: 32px;
+}
+  
+.card .btn-cancel:hover {
+    color: #000;
+}
